@@ -1,0 +1,23 @@
+import random
+for i in range(101):
+    print(i, end=" ")
+print()
+
+random_list = []
+dup_list = []
+for i in range(0,10):
+    random_list.append(random.randint(0, 100))
+print(random_list)
+
+for i in random_list:
+    if i not in dup_list:
+        dup_list.append(i)
+random_list = dup_list
+
+print(random_list)
+
+sorted_list = sorted(random_list)
+
+random_list.sort(reverse =True)
+
+print(random_list)
